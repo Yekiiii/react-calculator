@@ -2,37 +2,122 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#numbers{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-width: 1px;
+  padding: 5px;                           /*REMOVE THIS LATER*/
+}
+
+#operators{
+  display: grid;
+  grid-template-columns: repeat(1, 100px);
+  grid-gap: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  border-width: 1px;
+  padding: 5px;     
+}
+
+#calc-body{
+    /* background-color: #181a1f;*/
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-gap: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.numbers-class{
+  background-color: rgb(57, 57, 57);
+  height: 60px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition:0.3s;
+}
+
+.numbers-class:hover{
+  background-color: black;
+  
+  transition:0.3s;
+}
+
+.numbers-class:active{
+  transform: translateY(4px);
+  transition:0.3s;
+}
+
+.operators-class{
+  background-color: rgb(85, 85, 85);
+  height: 60px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.operators-class:hover{
+  
+    background-color: black;
+    
+    transition:0.3s;
+  
+}
+.operators-class:active{
+  transform: translateY(4px);
+  transition:0.3s;
+}
+
+
+#calculator{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#display{
+  background-color: #181a1f;
+  border-style: solid;
+  
+  width:100%;
+}
+#equals{
+  width: 100%;
+  background-color: rgb(224, 97, 58);
+  height: 60px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition:0.3s;
+}
+#equals:hover{
+  background-color: rgb(166, 71, 42);
+  transition:0.3s;
+}
+#equals:active{
+  transform: translateY(4px);
+  transition:0.3s;
 }
